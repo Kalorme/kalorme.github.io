@@ -1,346 +1,334 @@
 <!DOCTYPE HTML>
-<!--
-	Multiverse by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html>
-	<head>
-		<title>Receptjes Moutstraat</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-	</head>
-	<body class="is-preload">
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+        <title>Receptjes Moutstraat</title>
+        <link rel="stylesheet" href="assets/css/main.css" />
+        <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+        <style>
+        #header { display: none; }
 
-		<!-- Wrapper -->
-			<div id="wrapper">
+        #footer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background: #333;
+            color: white;
+            box-shadow: 0px -3px 6px rgba(0, 0, 0, 0.1);
+            font-size: 14px;
+            z-index: 100;
+        }
 
-				<!-- Header -->
-					<header id="header">
-						<h1><a href="index.html"><strong>Receptjes</strong> moutstraat</a></h1>
-						<nav>
-							<ul>
-								<li><a href="#footer" class="icon solid fa-info-circle">Filter</a></li>
-							</ul>
-						</nav>
-					</header>
+        .search-container {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
 
-				<!-- Main -->
-					<div id="main">
-						<article class="thumb">
-							<a href=Agedashi_Tofu.html><img src="images/recipe/Agedashi.jpg" /></a>
-							<h2><b>Agedashi Tofu</b></h2>
-						</article>
-						<article class="thumb">
-							<a href=Ajitama.html><img src="images/recipe/ajitama.jpg" /></a>
-							<h2><b>Ajitama</b></h2>
-						</article>
-						<article class="thumb">
-							<a href=Aushak.html><img src="images/recipe/aushak.jpg" /></a>
-							<h2><b>Aushak</b></h2>
-						</article>
-						<article class="thumb">
-							<a href=Banana_Bread.html><img src="images/recipe/bananabread.jpg" /></a>
-							<h2><b>Banana Bread</b></h2>
-						</article>
-						<article class="thumb">
-							<a href=Banh_Bao.html><img src="images/recipe/banhbao.jpg"/></a>
-							<h2><b>Bánh bao</b></h2>
-						</article>
-						<article class="thumb">
-							<a href=Banh_Bo_Nuong.html><img src="images/recipe/banhbo.jpg"/></a>
-							<h2><b>Bánh Bò Nướng</b></h2>
-						</article>
-						<article class="thumb">
-							<a href=Banh_Xeo.html><img src="images/recipe/banhxeo.jpg"/></a>
-							<h2><b>Bánh xèo</b></h2>
-						</article>
-						<article class="thumb">
-							<a href=Birria_Quesa_Tacos.html><img src="images/recipe/birria.png" /></a>
-							<h2><b>Birria Quesa Tacos</b></h2>
-						</article>
-						<article class="thumb">
-							<a href=Brownies.html><img src="images/recipe/brownies.jpg" /></a>
-							<h2><b>Brownies</b></h2>
-						</article>
-						<article class="thumb">
-							<a href=Burger_Buns.html><img src="images/recipe/burgerbuns.jpg" /></a>
-							<h2><b>Burger Buns</b></h2>
-						</article>
-						<article class="thumb">
-							<a href=Burger_sauce.html><img src="images/recipe/burgersauce.jpg" /></a>
-							<h2><b>Burger Sauce</b></h2>
-						</article>
-						<article class="thumb">
-							<a href=Butter_Chicken.html><img src="images/recipe/butterchicken.jpg" /></a>
-							<h2><b>Butter Chicken</b></h2>
-						</article>
-						<article class="thumb">
-							<a href=Buttermilk_Biscuits.html><img src="images/recipe/buttermilkbiscuits.jpg"/></a>
-							<h2><b>Buttermilk Biscuits</b></h2>
-						</article>
-						<article class="thumb">
-							<a href=Buttermilk_Fried_Chicken.html><img src="images/recipe/buttermilkchicken.jpg"/></a>
-							<h2><b>Buttermilk Fried Chicken</b></h2>
-						</article>
-						<article class="thumb">
-							<a href=Cha_gio.html><img src="images/recipe/chagio.jpg"/></a>
-							<h2><b>Chả giò</b></h2>
-						</article>
-						<article class="thumb">
-							<a href=Cheesy_Enchiladas.html><img src="images/recipe/cheesyenchil.jpg"/></a>
-							<h2><b>Cheesy Enchiladas</b></h2>
-						</article>
-						<article class="thumb">
-							<a href=Chicago_Deep_Dish_Pizza.html><img src="images/recipe/chicagopizza.jpg"/></a>
-							<h2><b>Chicago Deep Dish Pizza</b></h2>
-						</article>
-						<article class="thumb">
-							<a href=Chicken_Katsudon.html><img src="images/recipe/chickenkatsudon.jpg"/></a>
-							<h2><b>Chicken Katsudon</b></h2>
-						</article>
-						<article class="thumb">
-							<a href=Chilli_Con_Carne.html><img src="images/recipe/chillicc.jpg"/></a>
-							<h2><b>Chilli Con Carne</b></h2>
-						</article>
-						<article class="thumb">
-							<a href=Cinnamon_Rolls.html><img src="images/recipe/cinrolls.jpg"/></a>
-							<h2><b>Cinnamon Rolls</b></h2>
-						</article>
-						<article class="thumb">
-							<a href=Croissants.html><img src="images/recipe/croissants.png"/></a>
-							<h2><b>Croissants</b></h2>
-						</article>
-						<article class="thumb">
-							<a href=Flammkuchen.html><img src="images/recipe/Flammkuchen.jpg"/></a>
-							<h2><b>Flammkuchen</b></h2>
-						</article>
-						<article class="thumb">
-							<a href=Focaccia.html><img src="images/recipe/Focaccia.jpg"/></a>
-							<h2><b>Focaccia</b></h2>
-						</article>
-						<article class="thumb">
-							<a href=Gnocchi_With_Cherry_Tomato_Sauce.html><img src="images/recipe/gnocchi.jpg"/></a>
-							<h2><b>Ghocchi With Cherry Tomato Sauce</b></h2>
-						</article>
-						<article class="thumb">
-							<a href=Gyoza.html><img src="images/recipe/gyoza.jpg"/></a>
-							<h2><b>Gyoza</b></h2>
-						</article>
-						<article class="thumb">
-							<a href=Gyudon.html><img src="images/recipe/gyudon.png"/></a>
-							<h2><b>Gyudon</b></h2>
-						</article>
-						<article class="thumb">
-							<a href=Jamaican_Beef_Baozis.html><img src="images/recipe/jbbaos.jpg"/></a>
-							<h2><b>Jamaican Beef Baozis</b></h2>
-						</article>
-						<article class="thumb">
-							<a href=Jamaican_Beef_Patty.html><img src="images/recipe/jbpatty.jpg"/></a>
-							<h2><b>Jamaican Beef Patty</b></h2>
-						</article>
-						<article class="thumb">
-							<a href=Japanese_Cream_Stew.html><img src="images/recipe/jcreamstew.jpg"/></a>
-							<h2><b>Japanese Cream Stew</b></h2>
-						</article>
-						<article class="thumb">
-							<a href=Japanese_Curry.html><img src="images/recipe/jcurry.jpg"/></a>
-							<h2><b>Japanese Curry</b></h2>
-						</article>
-						<article class="thumb">
-							<a href=Karaage_Japanese_Fried_Chicken.html><img src="images/recipe/karaage.jpg"/></a>
-							<h2><b>Karaage Japanese Fried Chicken</b></h2>
-						</article>
-						<article class="thumb">
-							<a href=Lahmacun.html><img src="images/recipe/lahmacun.jpg"/></a>
-							<h2><b>Lahmacun</b></h2>
-						</article>
-						<article class="thumb">
-							<a href=Lasagna.html><img src="images/recipe/lasagna.png"/></a>
-							<h2><b>Lasagna</b></h2>
-						</article>
-						<article class="thumb">
-							<a href=Lazy_Dragon_Roll.html><img src="images/recipe/dragonroll.jpg"/></a>
-							<h2><b>Lazy Dragon Roll</b></h2>
-						</article>
-						<article class="thumb">
-							<a href=Lemon_Bars.html><img src="images/recipe/lemonbars.jpg"/></a>
-							<h2><b>Lemon Bars</b></h2>
-						</article>
-						<article class="thumb">
-							<a href=Lentil_Moussaka.html><img src="images/recipe/lentilmous.jpg"/></a>
-							<h2><b>Lentil Moussaka</b></h2>
-						</article>
-						<article class="thumb">
-							<a href=Mizu_Shingen_Mochi.html><img src="images/recipe/mizushingen.jpg"/></a>
-							<h2><b>Mizu Shingen Mochi</b></h2>
-						</article>
-						<article class="thumb">
-							<a href=Mosterdsoep.html><img src="images/recipe/mosterdsoep.jpg"/></a>
-							<h2><b>Mosterdsoep</b></h2>
-						</article>
-						<article class="thumb">
-							<a href=Naan.html><img src="images/recipe/naan.png"/></a>
-							<h2><b>Naan</b></h2>
-						</article>
-						<article class="thumb">
-							<a href=Okonomiyaki.html><img src="images/recipe/okonomiyaki.jpg"/></a>
-							<h2><b>Okonomiyaki</b></h2>
-						</article>
-						<article class="thumb">
-							<a href=Pide.html><img src="images/recipe/pide.jpg"/></a>
-							<h2><b>Pide</b></h2>
-						</article>
-						<article class="thumb">
-							<a href=Pierogi_Ruskie.html><img src="images/recipe/pierogi.jpg"/></a>
-							<h2><b>Pierogi Ruskie</b></h2>
-						</article>
-						<article class="thumb">
-							<a href=Rhubarb_Meringue_Pie.html><img src="images/recipe/rhubarbmeringue.jpg"/></a>
-							<h2><b>Rhubarb Meringue Pie</b></h2>
-						</article>
-						<article class="thumb">
-							<a href=Roti.html><img src="images/recipe/roti.png"/></a>
-							<h2><b>Roti</b></h2>
-						</article>
-						<article class="thumb">
-							<a href=Rugelach.html><img src="images/recipe/rugelach.jpg"/></a>
-							<h2><b>Rugelach</b></h2>
-						</article>
-						<article class="thumb">
-							<a href=Sachertorte.html><img src="images/recipe/sachertorte.jpg"/></a>
-							<h2><b>Sachertorte</b></h2>
-						</article>
-						<article class="thumb">
-							<a href=Samosas.html><img src="images/recipe/samosas.jpg"/></a>
-							<h2><b>Samosas</b></h2>
-						</article>
-						<article class="thumb">
-							<a href=Sichuan_Mapo_Tofu.html><img src="images/recipe/mapotofu.jpg"/></a>
-							<h2><b>Sichuan Mapo Tofu</b></h2>
-						</article>
-						<article class="thumb">
-							<a href=Soboro_Don.html><img src="images/recipe/soboro.jpg"/></a>
-							<h2><b>Soboro Don</b></h2>
-						</article>
-						<article class="thumb">
-							<a href=Spaghetti_Carbonara.html><img src="images/recipe/scarbonara.jpg"/></a>
-							<h2><b>Spaghetti Carbonara</b></h2>
-						</article>
-						<article class="thumb">
-							<a href=Spicy_Peanut_Udon.html><img src="images/recipe/peanutudon.jpg"/></a>
-							<h2><b>Spicy Peanut Udon</b></h2>
-						</article>
-						<article class="thumb">
-							<a href=Taiwanese_Pepper_Meat_Buns.html><img src="images/recipe/pepperbun.jpg"/></a>
-							<h2><b>Taiwanese Pepper Meat Buns</b></h2>
-						</article>
-						<article class="thumb">
-							<a href=Tangzhong_Milk_Bread.html><img src="images/recipe/tangzhong.jpg"/></a>
-							<h2><b>Tangzhong Milk Bread</b></h2>
-						</article>
-						<article class="thumb">
-							<a href=Tantanmen_Ramen.html><img src="images/recipe/tantanmen.jpg"/></a>
-							<h2><b>Tantanmen Ramen</b></h2>
-						</article>
-						<article class="thumb">
-							<a href=Toffee_Chocolate_Chip_Cookies.html><img src="images/recipe/toffeechip.jpg"/></a>
-							<h2><b>Toffee Chocolate Chip Cookies</b></h2>
-						</article>
-						<article class="thumb">
-							<a href=Vegan_Tonkotsu_Ramen.html><img src="images/recipe/veggytonkotsu.jpg"/></a>
-							<h2><b>Vegan Tonkotsu Ramen</b></h2>
-						</article>
-						<article class="thumb">
-							<a href=Zangi_Hokkaido_Fried_Chicken.html><img src="images/recipe/zangi.png"/></a>
-							<h2><b>Zangi Hokkaido Fried Chicken</b></h2>
-						</article>
-					</div>
+        .search-container select, 
+        .search-container input,
+        #filterBtn {
+            padding: 5px 10px;
+            height: 30px;
+            line-height: 20px;
+            font-size: 14px;
+            background: #555;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
 
-				<!-- Footer -->
-					<footer id="footer" class="panel">
-						<div class="inner split">
-							<div>
-								<section>
-									<h2>Recipe Type</h2>
-									<ul class="icons">
-										<li><a href="meal" class="🥬"><span class="label"><font size="+3">🍽️</font></span></a></li>
-										<li><a href="bread" class="🥬"><span class="label"><font size="+3">🍞</font></span></a></li>
-										<li><a href="dessert" class="🥬"><span class="label"><font size="+3">🍰</font></span></a></li>
-										<li><a href="soup" class="🥬"><span class="label"><font size="+3">🍲</font></span></a></li>
-										<li><a href="drink" class="🥬"><span class="label"><font size="+3">🍹</font></span></a></li>
-									</ul>
-								</section>
-								<section>
-									<h2>Filter Veggie/Meat/Seafood</h2>
-									<ul class="icons">
-										<li><a href="veggie" class="🥬"><span class="label"><font size="+3">🥬</font></span></a></li>
-										<li><a href="chicken" class="🥬"><span class="label"><font size="+3">🐔</font></span></a></li>
-										<li><a href="beef" class="🥬"><span class="label"><font size="+3">🐷</font></span></a></li>
-										<li><a href="pork" class="🥬"><span class="label"><font size="+3">🐮</font></span></a></li>
-										<li><a href="seafood" class="🥬"><span class="label"><font size="+3">🍤</font></span></a></li>
-									</ul>
-								</section>
-							</div>
-							<div>
-								<section>
-									<h2>Recipes by country</h2>
-									<h3>Africa & Americas</h3>
-									<ul class="icons">
-										<li><a href="argentina" class="🥬"><span class="label"><font size="+3">🇦🇷</font></span></a></li>
-										<li><a href="egypt" class="🥬"><span class="label"><font size="+3">🇪🇬</font></span></a></li>
-										<li><a href="jamaica" class="🥬"><span class="label"><font size="+3">🇯🇲️</font></span></a></li>
-										<li><a href="mexico" class="🥬"><span class="label"><font size="+3">🇲🇽</font></span></a></li>
-										<li><a href="suriname" class="🥬"><span class="label"><font size="+3">🇸🇷</font></span></a></li>
-									</ul>
-									<h3>Asia</h3>
-									<ul class="icons">
-										<li><a href="afghanistan" class="🥬"><span class="label"><font size="+3">🇦🇫️</font></span></a></li>
-										<li><a href="armenia" class="🥬"><span class="label"><font size="+3">🇦🇷️</font></span></a></li>
-										<li><a href="china" class="🥬"><span class="label"><font size="+3">🇨🇳️</font></span></a></li>
-										<li><a href="india" class="🥬"><span class="label"><font size="+3">🇮🇳️</font></span></a></li>
-										<li><a href="israel" class="🥬"><span class="label"><font size="+3">🇮🇱️</font></span></a></li>
-										<li><a href="japan" class="🥬"><span class="label"><font size="+3">🇯🇵</font></span></a></li>
-										<li><a href="korea" class="🥬"><span class="label"><font size="+3">🇰🇷</font></span></a></li>
-										<li><a href="laos" class="🥬"><span class="label"><font size="+3">🇱🇦</font></span></a></li>
-										<li><a href="taiwan" class="🥬"><span class="label"><font size="+3">🇹🇼</font></span></a></li>
-										<li><a href="turkey" class="🥬"><span class="label"><font size="+3">🇹🇷</font></span></a></li>
-										<li><a href="vietnam" class="🥬"><span class="label"><font size="+3">🇻🇳</font></span></a></li>
-									</ul>
-									<h3>Europe</h3>
-									<ul class="icons">
-										<li><a href="austria" class="🥬"><span class="label"><font size="+3">🇦🇹</font></span></a></li>
-										<li><a href="england" class="🥬"><span class="label"><font size="+3">🏴󠁧󠁢󠁥󠁮󠁧󠁿</font></span></a></li>
-										<li><a href="france" class="🥬"><span class="label"><font size="+3">🇫🇷</font></span></a></li>
-										<li><a href="germany" class="🥬"><span class="label"><font size="+3">🇩🇪</font></span></a></li>
-										<li><a href="greece" class="🥬"><span class="label"><font size="+3">🇬🇷</font></span></a></li>
-										<li><a href="italy" class="🥬"><span class="label"><font size="+3">🇮🇹</font></span></a></li>
-										<li><a href="poland" class="🥬"><span class="label"><font size="+3">🇵🇱</font></span></a></li>
-										<li><a href="spain" class="🥬"><span class="label"><font size="+3">🇪🇸️</font></span></a></li>
-									</ul>
-									<h3>Fusion</h3>
-									<ul class="icons">
-										<li><a href="fusion" class="🥬"><span class="label"><font size="+3">🌎</font></span></a></li>
-									</ul>
-																	<p class="copyright">
-									&copy; receptjes niet stelen he ;)</a>
-								</p>
-								</section>
-							</div>
-						</div>
-					</footer>
+        #filterBtn {
+            text-transform: capitalize;
+            width: 60px;
+        }
 
-			</div>
+        #filterMenu {
+            display: none;
+            position: fixed;
+            right: 20px;
+            bottom: 70px;
+            background: #333;
+            color: white;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+            z-index: 101;
+            max-height: 80vh;
+            overflow-y: auto;
+        }
 
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.poptrox.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+        .filter-category {
+            margin-bottom: 10px;
+        }
 
-	</body>
+        .filter-category h3 {
+            margin-bottom: 5px;
+        }
+
+        .filter-option {
+            background: #555;
+            color: white;
+            border: none;
+            width: auto;
+            height: 30px;
+            padding: 0 10px;
+            margin: 5px;
+            cursor: pointer;
+            border-radius: 4px;
+            font-size: 14px;
+            display: inline-flex;
+            align-items: center;
+            text-align: center;
+            text-transform: none;
+        }
+
+        .filter-option.active {
+            background: #555;
+            border: 2px solid #fff;
+        }
+
+        #main {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            padding: 20px;
+            margin-bottom: 120px;
+            margin-right: auto;
+            margin-left: auto;
+            max-width: 2160px;
+            justify-content: flex-start;
+        }
+
+        .thumb {
+            flex: 0 0 calc(33.33% - 14px);
+            max-width: calc(33.33% - 14px);
+            margin: 0;
+        }
+
+        .thumb img {
+            width: 100%;
+            border-radius: 8px;
+        }
+
+        .thumb h2 { 
+            text-align: center; 
+            font-size: 18px; 
+            margin-top: 10px; 
+        }
+
+        @media (max-width: 1200px) {
+            .thumb {
+                flex: 0 0 calc(50% - 10px);
+                max-width: calc(50% - 10px);
+            }
+        }
+
+        @media (max-width: 480px) {
+            .thumb {
+                flex: 0 0 100%;
+                max-width: 100%;
+            }
+            #main {
+                padding: 10px;
+                gap: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="main"></div>
+
+    <footer id="footer">
+        <div class="search-container">
+            <select id="searchType">
+                <option value="name">Search by Name</option>
+                <option value="ingredients">Search by Ingredients</option>
+            </select>
+            <input type="text" id="searchInput" placeholder="Search recipes...">
+        </div>
+        <button id="filterBtn">Filter</button>
+        <div id="filterMenu">
+            <div class="filter-category">
+                <h3>Type</h3>
+                <button class="filter-option" data-category="Type" data-value="Meal">🍽️Meal</button>
+                <button class="filter-option" data-category="Type" data-value="Side">🥗Side</button>
+                <button class="filter-option" data-category="Type" data-value="Soup">🍲Soup</button>
+				<button class="filter-option" data-category="Type" data-value="Bread">🍞Bread</button>
+                <button class="filter-option" data-category="Type" data-value="Dessert">🍰Dessert</button>
+                <button class="filter-option" data-category="Type" data-value="Drink">🍹Drink</button>
+                <button class="filter-option" data-category="Type" data-value="Sauce">🥫Sauce</button>
+				<button class="filter-option" data-category="Type" data-value="Other">🫙Other</button>
+            </div>
+            <div class="filter-category">
+                <h3>Protein</h3>
+                <button class="filter-option" data-category="Protein" data-value="Pork">🥓Pork</button>
+                <button class="filter-option" data-category="Protein" data-value="Beef">🥩Beef</button>
+                <button class="filter-option" data-category="Protein" data-value="Chicken">🍗Chicken</button>
+                <button class="filter-option" data-category="Protein" data-value="Mince">🍖Mince</button>
+                <button class="filter-option" data-category="Protein" data-value="Sausage">🌭Sausage</button>
+                <button class="filter-option" data-category="Protein" data-value="Seafood">🦐Seafood</button>
+                <button class="filter-option" data-category="Protein" data-value="Veggy">🥬Veggy</button>
+            </div>
+            <div class="filter-category">
+                <h3>Cuisine</h3>
+                <button class="filter-option" data-category="Cuisine" data-value="Japanese">🇯🇵</button>
+                <button class="filter-option" data-category="Cuisine" data-value="American">🇺🇸</button>
+                <button class="filter-option" data-category="Cuisine" data-value="Chinese">🇨🇳</button>
+                <button class="filter-option" data-category="Cuisine" data-value="Korean">🇰🇷</button>
+                <button class="filter-option" data-category="Cuisine" data-value="Belgian">🇧🇪</button>
+                <button class="filter-option" data-category="Cuisine" data-value="Italian">🇮🇹</button>
+                <button class="filter-option" data-category="Cuisine" data-value="Greek">🇬🇷</button>
+                <button class="filter-option" data-category="Cuisine" data-value="Turkish">🇹🇷</button>
+                <button class="filter-option" data-category="Cuisine" data-value="Argentinian">🇦🇷</button>
+                <button class="filter-option" data-category="Cuisine" data-value="English">🇬🇧</button>
+                <button class="filter-option" data-category="Cuisine" data-value="Vietnamese">🇻🇳</button>
+                <button class="filter-option" data-category="Cuisine" data-value="Surinamese">🇸🇷</button>
+                <button class="filter-option" data-category="Cuisine" data-value="Armenian">🇦🇲</button>
+                <button class="filter-option" data-category="Cuisine" data-value="Mongolian">🇲🇳</button>
+                <button class="filter-option" data-category="Cuisine" data-value="French">🇫🇷</button>
+                <button class="filter-option" data-category="Cuisine" data-value="German">🇩🇪</button>
+                <button class="filter-option" data-category="Cuisine" data-value="Georgian">🇬🇪</button>
+                <button class="filter-option" data-category="Cuisine" data-value="Indian">🇮🇳</button>
+                <button class="filter-option" data-category="Cuisine" data-value="Laotian">🇱🇦</button>
+                <button class="filter-option" data-category="Cuisine" data-value="Polish">🇵🇱</button>
+                <button class="filter-option" data-category="Cuisine" data-value="Indonesian">🇮🇩</button>
+                <button class="filter-option" data-category="Cuisine" data-value="Austrian">🇦🇹</button>
+                <button class="filter-option" data-category="Cuisine" data-value="Taiwanese">🇹🇼</button>
+                <button class="filter-option" data-category="Cuisine" data-value="Spanish">🇪🇸</button>                
+            </div>
+            <button id="clearFilters" class="filter-option">Clear Filters</button>
+        </div>
+    </footer>
+
+    <!DOCTYPE HTML>
+    <!-- Previous HTML remains exactly the same until the script section -->
+    <!-- Only showing the updated JavaScript portion since everything else remains unchanged -->
+    <script>
+document.addEventListener("DOMContentLoaded", async () => {
+    const main = document.getElementById("main");
+    const searchInput = document.getElementById("searchInput");
+    const searchType = document.getElementById("searchType");
+    const filterBtn = document.getElementById("filterBtn");
+    const filterMenu = document.getElementById("filterMenu");
+    const filterOptions = document.querySelectorAll(".filter-option:not(#clearFilters)");
+    const clearFiltersBtn = document.getElementById("clearFilters");
+    let activeFilters = new Map();
+    let allRecipes = {};
+
+    document.addEventListener("click", (event) => {
+        if (!filterMenu.contains(event.target) && event.target !== filterBtn) {
+            filterMenu.style.display = "none";
+        }
+    });
+
+    filterBtn.addEventListener("click", (event) => {
+        event.stopPropagation();
+        filterMenu.style.display = filterMenu.style.display === "block" ? "none" : "block";
+    });
+
+    try {
+        const response = await fetch("recipe_metadata.json");
+        if (!response.ok) throw new Error("Failed to fetch recipe metadata");
+        allRecipes = await response.json();
+        renderRecipes(allRecipes);
+    } catch (error) {
+        main.innerHTML = "<p>Failed to load recipes.</p>";
+        console.error(error);
+    }
+
+    function renderRecipes(filteredRecipes) {
+        main.innerHTML = "";
+        Object.keys(filteredRecipes).forEach(file => {
+            const { title } = filteredRecipes[file];
+            main.innerHTML += `
+                <article class="thumb">
+                    <a href="${file}"><img src="./images/recipe/${file.replace('.html', '.jpg')}" alt="${title}" /></a>
+                    <h2><b>${title}</b></h2>
+                </article>`;
+        });
+    }
+
+    function applySearchAndFilters() {
+        // First apply search
+        const searchTerm = searchInput.value.toLowerCase().trim();
+        const searchMethod = searchType.value;
+
+        let filteredRecipes = Object.keys(allRecipes).filter(file => {
+            const recipe = allRecipes[file];
+            if (searchTerm === "") return true;
+
+            if (searchMethod === "name") {
+                return recipe.title.toLowerCase().includes(searchTerm);
+            } else if (searchMethod === "ingredients") {
+                return recipe.ingredients.some(ingredient => 
+                    ingredient.toLowerCase().includes(searchTerm)
+                );
+            }
+            return true;
+        }).reduce((obj, key) => (obj[key] = allRecipes[key], obj), {});
+
+        // Then apply filters
+        if (activeFilters.size > 0) {
+            filteredRecipes = Object.keys(filteredRecipes).filter(file => {
+                const data = filteredRecipes[file];
+                // Check if category exists and is an array
+                if (!data.category || !Array.isArray(data.category)) return false;
+                
+                return Array.from(activeFilters.entries()).every(([category, values]) => {
+                    return Array.from(values).some(value => 
+                        data.category.includes(value)
+                    );
+                });
+            }).reduce((obj, key) => (obj[key] = filteredRecipes[key], obj), {});
+        }
+
+        renderRecipes(filteredRecipes);
+    }
+
+    searchInput.addEventListener("input", applySearchAndFilters);
+    searchType.addEventListener("change", applySearchAndFilters);
+
+    filterOptions.forEach(button => {
+        button.addEventListener("click", function() {
+            const category = this.getAttribute("data-category");
+            const value = this.getAttribute("data-value");
+            
+            if (!activeFilters.has(category)) {
+                activeFilters.set(category, new Set());
+            }
+            
+            const categoryFilters = activeFilters.get(category);
+            if (categoryFilters.has(value)) {
+                categoryFilters.delete(value);
+                if (categoryFilters.size === 0) {
+                    activeFilters.delete(category);
+                }
+                this.classList.remove("active");
+            } else {
+                categoryFilters.add(value);
+                this.classList.add("active");
+            }
+            
+            applySearchAndFilters();
+        });
+    });
+
+    clearFiltersBtn.addEventListener("click", function() {
+        activeFilters.clear();
+        filterOptions.forEach(button => button.classList.remove("active"));
+        applySearchAndFilters();
+    });
+});
+    </script>
+</body>
 </html>
