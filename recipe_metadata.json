@@ -398,17 +398,6 @@
             "tomato paste"
         ]
     },
-    "Cheong.html": {
-        "title": "Cheong",
-        "category": [
-            "Korean",
-            "Other"
-        ],
-        "ingredients": [
-            "fruit",
-            "sugar"
-        ]
-    },
     "Brownies.html": {
         "title": "Brownies",
         "category": [
@@ -616,6 +605,49 @@
             "white pepper"
         ]
     },
+    "Byrek.html": {
+        "title": "Byrek",
+        "category": [
+            "Albanian",
+            "Mince",
+            "Meal",
+            "Beef"
+        ],
+        "ingredients": [
+            "Oil",
+            "Salt & pepper",
+            "butter",
+            "egg",
+            "egg",
+            "garlic",
+            "minced beef",
+            "onion",
+            "paprika",
+            "salt",
+            "tomato paste",
+            "white bread flour"
+        ]
+    },
+    "Byrek_Gjirokastrit.html": {
+        "title": "Byrek Gjirokastrit",
+        "category": [
+            "Albanian",
+            "Meal",
+            "Vegetarian"
+        ],
+        "ingredients": [
+            "Butter or olive oil",
+            "Feta cheese",
+            "Garlic",
+            "Greek yogurt or hung yogurt",
+            "Olive oil",
+            "Phyllo or filo pastry sheets",
+            "Red chili flakes",
+            "Spinach",
+            "Spring onion",
+            "to Salt and pepper"
+        ]
+    },
     "Cha_gio.html": {
         "title": "Cha Gio",
         "category": [
@@ -690,6 +722,17 @@
             "onion powder",
             "pepper",
             "salt"
+        ]
+    },
+    "Cheong.html": {
+        "title": "Cheong",
+        "category": [
+            "Korean",
+            "Other"
+        ],
+        "ingredients": [
+            "fruit",
+            "sugar"
         ]
     },
     "Chicago_Deep_Dish_Pizza.html": {
@@ -894,6 +937,23 @@
             "water"
         ]
     },
+    "Dong_Po_Rou.html": {
+        "title": "Dong Po Rou",
+        "category": [
+            "Chinese",
+            "Meal",
+            "Pork"
+        ],
+        "ingredients": [
+            "Shaoxing wine",
+            "dark soy sauce",
+            "ginger",
+            "light soy sauce",
+            "scallions",
+            "slab of pork belly",
+            "\u2013 rock sugar"
+        ]
+    },
     "Egg_Fried_Rice.html": {
         "title": "Egg Fried Rice",
         "category": [
@@ -946,6 +1006,41 @@
             "tomato paste",
             "torn basil leaves",
             "whole peeled tomatoes"
+        ]
+    },
+    "Fergese.html": {
+        "title": "Fergese",
+        "category": [
+            "Albanian",
+            "Side",
+            "Vegetarian"
+        ],
+        "ingredients": [
+            "About tomatoes,",
+            "Greek yogurt",
+            "basil",
+            "bell peppers, roasted,",
+            "butter",
+            "feta cheese",
+            "flour",
+            "olive oil",
+            "onion,",
+            "pepper",
+            "salt"
+        ]
+    },
+    "Fermented_Hot_Honey.html": {
+        "title": "Fermented Hot Honey",
+        "category": [
+            "Global",
+            "Other",
+            "Sauce"
+        ],
+        "ingredients": [
+            "A generous handful of fresh herbs, like thyme and oregano, for aromatic layers",
+            "Honey",
+            "of garlic, finely sliced for depth",
+            "red peppers, thinly sliced for a punch of heat"
         ]
     },
     "Fettuccine_Alfredo.html": {
@@ -1051,6 +1146,22 @@
             "garlic, minced",
             "large red or yellow onions",
             "sugar",
+            "thyme"
+        ]
+    },
+    "French_onion_soup_puffs.html": {
+        "title": "French Onion Soup Puffs",
+        "category": [
+            "French",
+            "Meal",
+            "Vegetarian"
+        ],
+        "ingredients": [
+            "Gruy\u00e8re",
+            "Puff pastry",
+            "egg",
+            "onions",
+            "salt",
             "thyme"
         ]
     },
@@ -1509,6 +1620,61 @@
             "vegetable broth"
         ]
     },
+    "Lepinja.html": {
+        "title": "Lepinja",
+        "category": [
+            "Croatian",
+            "Bread"
+        ],
+        "ingredients": [
+            "active dry yeast",
+            "bread flour",
+            "milk",
+            "salt",
+            "sugar",
+            "warm water"
+        ]
+    },
+    "Mala_Cream_Shrimp_Dim_Sum.html": {
+        "title": "Mala Cream Shrimp Dim Sum",
+        "category": [
+            "Seafood",
+            "Korean",
+            "Chinese",
+            "Side",
+            "Meal"
+        ],
+        "ingredients": [
+            "Green onion",
+            "MSG",
+            "Red pepper",
+            "Shaoxing wine",
+            "Shaoxing wine",
+            "Szechuan peppercorns",
+            "brown sugar",
+            "corn starch",
+            "cumin seeds",
+            "garlic",
+            "green onions, thinly sliced",
+            "heavy cream",
+            "light soy sauce",
+            "lotus root, peeled",
+            "neutral oil",
+            "oil",
+            "oil",
+            "salt",
+            "salt",
+            "salted butter",
+            "shallot",
+            "shrimp, peeled and deveined",
+            "spring roll wrappers",
+            "star anise",
+            "sugar",
+            "white pepper",
+            "\u2013 dried chilis",
+            "\u2013 homemade mala oil"
+        ]
+    },
     "Meat_and_Potato_Pie.html": {
         "title": "Meat And Potato Pie",
         "category": [
@@ -1549,6 +1715,27 @@
             "of kuromitsu/ honey/peach syrup",
             "sugar",
             "water"
+        ]
+    },
+    "Mooncake.html": {
+        "title": "Mooncake",
+        "category": [
+            "Chinese",
+            "Vietnamese",
+            "Dessert",
+            "Vegetarian"
+        ],
+        "ingredients": [
+            "Cornstarch -",
+            "all-purpose flour",
+            "dried lotus seeds",
+            "egg yolk -",
+            "golden syrup",
+            "lye water",
+            "neutral cooking oil",
+            "neutral cooking oil",
+            "salted egg yolks",
+            "sugar"
         ]
     },
     "Mosterdsoep.html": {
@@ -1930,6 +2117,30 @@
             "white pepper powder"
         ]
     },
+    "Snow_skin_mooncake.html": {
+        "title": "Snow Skin Mooncake",
+        "category": [
+            "Chinese",
+            "Dessert",
+            "Vegetarian"
+        ],
+        "ingredients": [
+            "Matcha powder",
+            "condensed milk",
+            "condensed milk",
+            "glutinous rice flour",
+            "glutinous rice flour",
+            "large eggs",
+            "milk",
+            "neutral cooking oil",
+            "powdered sugar",
+            "powdered sugar",
+            "regular rice flour",
+            "unsalted butter",
+            "wheat starch",
+            "wheat starch"
+        ]
+    },
     "Soboro_don.html": {
         "title": "Soboro Don",
         "category": [
@@ -1968,6 +2179,25 @@
             "eggs",
             "guanciale",
             "spaghetti"
+        ]
+    },
+    "Speca_Me_Gjize_Ne_Furres.html": {
+        "title": "Speca Me Gjize Ne Furres",
+        "category": [
+            "Albanian",
+            "Side",
+            "Vegetarian"
+        ],
+        "ingredients": [
+            "Olive oil",
+            "Salt",
+            "chopped parsley",
+            "eggs",
+            "garlic clove",
+            "grated kashkaval cheese",
+            "peppers",
+            "ricotta cheese",
+            "toasted breadcrumbs"
         ]
     },
     "Spicy_Peanut_Udon.html": {
