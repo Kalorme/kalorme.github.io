@@ -24,8 +24,7 @@
         "title": "Air Fryer Churros",
         "category": [
             "Dessert",
-            "Spanish",
-            "Vegetarian"
+            "Spanish"
         ],
         "ingredients": [
             "all-purpose flour",
@@ -84,8 +83,7 @@
         "title": "American Pancakes",
         "category": [
             "Dessert",
-            "American",
-            "Vegetarian"
+            "American"
         ],
         "ingredients": [
             "all-purpose flour",
@@ -118,6 +116,76 @@
             "oil",
             "salt",
             "unsalted butter"
+        ]
+    },
+    "Anshun Posubao.html": {
+        "title": "Anshun posubao",
+        "category": [
+            "Meal",
+            "Chinese",
+            "Pork",
+            "Mince"
+        ],
+        "ingredients": [
+            "active laozao fermented rice",
+            "all purpose flour",
+            "all purpose flour",
+            "all purpose flour",
+            "cornstarch",
+            "dark brown sugar",
+            "granulated sugar",
+            "light soy sauce",
+            "long grain sticky rice",
+            "neutral oil",
+            "oil",
+            "pork leg or belly",
+            "rice beans or red adzuki beans",
+            "salt",
+            "shaoxing wine",
+            "sichuan peppercorn powder",
+            "sliced scallions",
+            "sodium carbonate",
+            "sodium carbonate",
+            "sponge dough from above",
+            "starter",
+            "sugar",
+            "sugar",
+            "toasted perilla seed",
+            "water",
+            "water",
+            "water",
+            "water",
+            "water",
+            "white pepper powder",
+            "yeast ball"
+        ]
+    },
+    "Arayes.html": {
+        "title": "Arayes",
+        "category": [
+            "Meal",
+            "Lebanese",
+            "Pork",
+            "Mince"
+        ],
+        "ingredients": [
+            "brown onion",
+            "cayenne pepper",
+            "garlic",
+            "garlic",
+            "ground allspice",
+            "ground coriander",
+            "ground cumin",
+            "ground lamb or beef",
+            "kosher or cooking salt",
+            "kosher or cooking salt",
+            "lemon juice",
+            "olive oil spray or 20 g olive oil",
+            "parsley",
+            "pita breads",
+            "plain yogurt",
+            "smoked paprika",
+            "tahini"
         ]
     },
     "Argentinian_choripan.html": {
@@ -180,7 +248,6 @@
         "title": "Banana Bread",
         "category": [
             "American",
-            "Vegetarian",
             "Dessert"
         ],
         "ingredients": [
@@ -241,8 +308,7 @@
         "title": "Banh Bo Nuong",
         "category": [
             "Vietnamese",
-            "Dessert",
-            "Vegetarian"
+            "Dessert"
         ],
         "ingredients": [
             "Butter",
@@ -260,8 +326,7 @@
         "title": "Banh Flan",
         "category": [
             "Vietnamese",
-            "Dessert",
-            "Vegetarian"
+            "Dessert"
         ],
         "ingredients": [
             "egg yolks",
@@ -335,8 +400,7 @@
         "title": "Barm Cakes",
         "category": [
             "English",
-            "Bread",
-            "Vegetarian"
+            "Bread"
         ],
         "ingredients": [
             "Bread Flour",
@@ -398,12 +462,32 @@
             "tomato paste"
         ]
     },
+    "Brown butter and sage gnocchi.html": {
+        "title": "Brown butter and sage gnocchi",
+        "category": [
+            "Meal",
+            "Italian",
+            "Vegetarian"
+        ],
+        "ingredients": [
+            "black pepper",
+            "black pepper",
+            "fresh gnocchi",
+            "fresh sage leaves",
+            "garlic",
+            "grated parmesan",
+            "juice of \u00bd lemon",
+            "salt",
+            "salt and pepper",
+            "unsalted butter",
+            "zest of 1 lemon"
+        ]
+    },
     "Brownies.html": {
         "title": "Brownies",
         "category": [
             "American",
-            "Dessert",
-            "Vegetarian"
+            "Dessert"
         ],
         "ingredients": [
             "butter, melted",
@@ -475,8 +559,7 @@
         "title": "Burger Buns",
         "category": [
             "American",
-            "Bread",
-            "Vegetarian"
+            "Bread"
         ],
         "ingredients": [
             "Bread flour",
@@ -498,8 +581,7 @@
         "title": "Burger Sauce",
         "category": [
             "American",
-            "Sauce",
-            "Vegetarian"
+            "Sauce"
         ],
         "ingredients": [
             "Salt, pepper and msg",
@@ -564,8 +646,7 @@
         "title": "Buttermilk Biscuits",
         "category": [
             "American",
-            "Bread",
-            "Vegetarian"
+            "Bread"
         ],
         "ingredients": [
             "all purpose flour",
@@ -735,6 +816,31 @@
             "sugar"
         ]
     },
+    "Cherry tomato Burrata Dip.html": {
+        "title": "Cherry tomato burrata dip",
+        "category": [
+            "Side",
+            "Italian",
+            "Vegetarian"
+        ],
+        "ingredients": [
+            "French baguette, sliced",
+            "black pepper",
+            "burrata cheese",
+            "butter",
+            "cherry tomatoes",
+            "dried oregano",
+            "dried parsley",
+            "extra virgin olive oil",
+            "fresh basil,",
+            "fresh parsley,",
+            "red pepper flakes",
+            "roasted pine nuts",
+            "sea salt",
+            "shaved Parmesan cheese",
+            "\u2013 garlic (2\u20133 cloves), minced"
+        ]
+    },
     "Chicago_Deep_Dish_Pizza.html": {
         "title": "Chicago Deep Dish Pizza",
         "category": [
@@ -776,6 +882,27 @@
             "warm water",
             "white onion, grated",
             "whole peeled tomatoes"
+        ]
+    },
+    "Chicken and Parsley Egg-soup.html": {
+        "title": "Chicken and parsley egg-soup",
+        "category": [
+            "Soup",
+            "Belgian",
+            "Chicken"
+        ],
+        "ingredients": [
+            "chicken breast cut into small pieces",
+            "chicken or vegetable broth",
+            "cornstarch",
+            "eggs",
+            "fresh flat-leaf parsley",
+            "garlic",
+            "ketjap manis",
+            "oil for frying",
+            "pepper",
+            "salt",
+            "water"
         ]
     },
     "Chicken_Gyros.html": {
@@ -878,7 +1005,7 @@
         "category": [
             "American",
             "Dessert",
-            "Vegetarian"
+            "Bread"
         ],
         "ingredients": [
             "all-purpose flour",
@@ -903,8 +1030,7 @@
         "title": "Coconut Pancakes Recipe",
         "category": [
             "American",
-            "Dessert",
-            "Vegetarian"
+            "Dessert"
         ],
         "ingredients": [
             "all-purpose flour",
@@ -919,12 +1045,82 @@
             "sugar"
         ]
     },
+    "Coffee Cake.html": {
+        "title": "Coffee cake",
+        "category": [
+            "Dessert",
+            "American"
+        ],
+        "ingredients": [
+            "For 23 x 23 cm pan",
+            "all-purpose flour",
+            "all-purpose flour",
+            "all-purpose flour",
+            "all-purpose flour",
+            "baking powder",
+            "baking soda",
+            "cocoa powder",
+            "cornstarch",
+            "fine sea salt or table salt",
+            "fine sea salt or table salt",
+            "ground cardamom",
+            "ground cardamom",
+            "ground cinnamon",
+            "ground cinnamon",
+            "large eggs (approx. 150 g total), room temp",
+            "neutral oil",
+            "sour cream, room temp",
+            "sugar",
+            "sugar",
+            "sugar",
+            "unsalted butter",
+            "unsalted butter, room temp",
+            "vanilla extract"
+        ]
+    },
+    "Crispy Lotus Root Pancake.html": {
+        "title": "Crispy lotus root pancake",
+        "category": [
+            "Meal",
+            "Chinese",
+            "Vegetarian"
+        ],
+        "ingredients": [
+            "White pepper,",
+            "all-purpose flour",
+            "diced scallions",
+            "egg",
+            "hoisin sauce",
+            "lotus root",
+            "salt",
+            "soy sauce",
+            "oil to pan fry"
+        ]
+    },
+    "Crispy Skin Salmon.html": {
+        "title": "Crispy skin salmon",
+        "category": [
+            "Meal",
+            "Seafood",
+            "American"
+        ],
+        "ingredients": [
+            "black pepper",
+            "butter",
+            "fresh sage leaves",
+            "garlic",
+            "lemon juice, plus more",
+            "lemon wedges, for serving",
+            "oil",
+            "salmon fillets, skin-on",
+            "salt"
+        ]
+    },
     "Croissants.html": {
         "title": "Croissants",
         "category": [
             "French",
-            "Bread",
-            "Vegetarian"
+            "Bread"
         ],
         "ingredients": [
             "active dry yeast",
@@ -935,6 +1131,23 @@
             "unsalted butter",
             "unsalted butter, melted",
             "water"
+        ]
+    },
+    "Dashi Eggplant with Garlic.html": {
+        "title": "Dashi eggplant with garlic",
+        "category": [
+            "Side",
+            "Japanese",
+            "Vegetarian"
+        ],
+        "ingredients": [
+            "black pepper",
+            "chili flakes",
+            "dashi powder",
+            "eggplant",
+            "garlic",
+            "salt",
+            "vegetable oil"
         ]
     },
     "Dong_Po_Rou.html": {
@@ -951,7 +1164,7 @@
             "light soy sauce",
             "scallions",
             "slab of pork belly",
-            "\u2013 rock sugar"
+            "rock sugar"
         ]
     },
     "Egg_Fried_Rice.html": {
@@ -1063,6 +1276,25 @@
             "unsalted butter"
         ]
     },
+    "Fig Prosciutto Pizza with Blue Cheese & Arugula.html": {
+        "title": "Fig prosciutto pizza with blue cheese & arugula",
+        "category": [
+            "Meal",
+            "Italian",
+            "Vegetarian"
+        ],
+        "ingredients": [
+            "Cambozola cheese",
+            "Crema di Balsamico or balsamic reduction",
+            "Flaky sea salt (e.g. Maldon), to finish",
+            "Oil for drizzling",
+            "arugula",
+            "fig butter or fig jam",
+            "fresh figs (about 150 g), sliced",
+            "fresh pizza dough",
+            "prosciutto"
+        ]
+    },
     "Flammkuchen.html": {
         "title": "Flammkuchen",
         "category": [
@@ -1088,8 +1320,7 @@
         "title": "Focaccia",
         "category": [
             "Italian",
-            "Bread",
-            "Vegetarian"
+            "Bread"
         ],
         "ingredients": [
             "Bread Flour",
@@ -1212,11 +1443,28 @@
             "water"
         ]
     },
+    "Gochujang Buttered Noodles.html": {
+        "title": "Gochujang buttered noodles",
+        "category": [
+            "Meal",
+            "Korean",
+            "Vegetarian"
+        ],
+        "ingredients": [
+            "Optional garnish: chopped cilantro or thinly sliced scallions",
+            "Salt and pepper",
+            "garlic cloves",
+            "gochujang paste",
+            "honey",
+            "rice vinegar",
+            "spaghetti or other long pasta",
+            "unsalted butter"
+        ]
+    },
     "Gochujang_Honey_Mayo_sauce.html": {
         "title": "Gochujang Honey Mayo Sauce",
         "category": [
-            "Sauce",
-            "Vegetarian"
+            "Sauce"
         ],
         "ingredients": [
             "Gochujang",
@@ -1231,6 +1479,33 @@
             "Shiracha",
             "Soy sauce",
             "V"
+        ]
+    },
+    "Guichai Tod.html": {
+        "title": "Guichai tod",
+        "category": [
+            "Side",
+            "Thai",
+            "Vegetarian"
+        ],
+        "ingredients": [
+            "baking soda",
+            "garlic chives",
+            "garlic clove, finely grated or minced",
+            "neutral oil",
+            "rice flour",
+            "salt",
+            "soy sauce",
+            "soy sauce",
+            "sugar",
+            "sugar",
+            "sweet soy sauce",
+            "tapioca starch",
+            "vinegar",
+            "water",
+            "water",
+            "white pepper",
+            "\u2013 sambal oelek or minced Thai chilies"
         ]
     },
     "Gyoza.html": {
@@ -1280,6 +1555,25 @@
             "soy sauce",
             "sugar",
             "very thinly sliced beef"
+        ]
+    },
+    "Hummus.html": {
+        "title": "Hummus",
+        "category": [
+            "Sauce",
+            "Side",
+            "Lebanese"
+        ],
+        "ingredients": [
+            "Salt",
+            "chickpeas",
+            "cold water",
+            "fresh lemon juice",
+            "ground cumin",
+            "ground paprika, sumac, or Za\u2019atar for serving",
+            "olive oil, plus more for serving",
+            "small garlic clove, minced",
+            "well-stirred tahini"
         ]
     },
     "Jamaican_Beef_Baozis.html": {
@@ -1451,6 +1745,29 @@
             "sugar"
         ]
     },
+    "Khachapuri.html": {
+        "title": "Khachapuri",
+        "category": [
+            "Bread",
+            "Georgian",
+            "Vegetarian"
+        ],
+        "ingredients": [
+            "active dry yeast",
+            "all-purpose flour",
+            "egg",
+            "eggs",
+            "farmer's cheese",
+            "feta cheese",
+            "granulated sugar",
+            "milk",
+            "olive oil",
+            "salt",
+            "shredded mozzarella",
+            "unsalted butter",
+            "water"
+        ]
+    },
     "Khuushuur.html": {
         "title": "Khuushuur",
         "category": [
@@ -1556,12 +1873,26 @@
             "wood ear mushrooms"
         ]
     },
+    "Lemon Posset.html": {
+        "title": "Lemon posset",
+        "category": [
+            "Dessert",
+            "British"
+        ],
+        "ingredients": [
+            "granulated sugar",
+            "heavy cream",
+            "kosher salt",
+            "lemon juice",
+            "lemon zest",
+            "lemons, halved lengthwise with pulp scooped out"
+        ]
+    },
     "Lemon_Bars.html": {
         "title": "Lemon Bars",
         "category": [
             "American",
-            "Dessert",
-            "Vegetarian"
+            "Dessert"
         ],
         "ingredients": [
             "eggs",
@@ -1578,8 +1909,7 @@
         "title": "Lemon Mint Juice",
         "category": [
             "Drink",
-            "Egyptian",
-            "Vegetarian"
+            "Egyptian"
         ],
         "ingredients": [
             "Cold Water",
@@ -1635,6 +1965,53 @@
             "warm water"
         ]
     },
+    "Loco Moco Sauce.html": {
+        "title": "Loco moco sauce",
+        "category": [
+            "Sauce",
+            "American"
+        ],
+        "ingredients": [
+            "Butter",
+            "Chicken stock",
+            "Flour",
+            "Garlic",
+            "Msg",
+            "Mushrooms",
+            "Onions half caramelized",
+            "Pepper",
+            "Rice vinegar",
+            "Shaoxin wine",
+            "Soy sauce"
+        ]
+    },
+    "Loco Moco.html": {
+        "title": "Loco moco",
+        "category": [
+            "Meal",
+            "American",
+            "Beef",
+            "Mince"
+        ],
+        "ingredients": [
+            "Cooked rice",
+            "Green onions, sliced",
+            "Worcestershire sauce",
+            "Worcestershire sauce",
+            "beef stock",
+            "black pepper",
+            "cornstarch",
+            "egg",
+            "garlic powder",
+            "ground beef",
+            "ketchup",
+            "seasoning salt",
+            "sliced mushrooms",
+            "soy sauce",
+            "sweet onion,",
+            "unsalted butter"
+        ]
+    },
     "Mala_Cream_Shrimp_Dim_Sum.html": {
         "title": "Mala Cream Shrimp Dim Sum",
         "category": [
@@ -1675,6 +2052,50 @@
             "\u2013 homemade mala oil"
         ]
     },
+    "Malai Kofta.html": {
+        "title": "Malai kofta",
+        "category": [
+            "Meal",
+            "Indian",
+            "Vegetarian"
+        ],
+        "ingredients": [
+            "Indian bay leaf",
+            "Kashmiri red chili powder",
+            "Oil, for deep frying",
+            "Salt,",
+            "Salt,",
+            "black cardamom",
+            "boiled, peeled, and grated potatoes",
+            "chopped coriander leaves or mint",
+            "cinnamon stick",
+            "coriander powder",
+            "cornflour or tapioca starch",
+            "cumin powder",
+            "dried fenugreek leaves",
+            "fennel powder",
+            "garam masala",
+            "garam masala",
+            "ginger garlic paste",
+            "green cardamoms",
+            "light cooking cream",
+            "milk powder",
+            "oil",
+            "onion paste",
+            "paneer",
+            "raisins",
+            "red chili powder",
+            "strands mace",
+            "tomato pur\u00e9e",
+            "turmeric powder",
+            "water",
+            "\u2013 cashew paste",
+            "\u2013 cashews",
+            "\u2013 grated paneer",
+            "\u2013 light or whipping cream",
+            "\u2013 sugar"
+        ]
+    },
     "Meat_and_Potato_Pie.html": {
         "title": "Meat And Potato Pie",
         "category": [
@@ -1702,12 +2123,75 @@
             "Worcesertshire Sauce"
         ]
     },
+    "Mi Xao Gion.html": {
+        "title": "Mi xao gion",
+        "category": [
+            "Meal",
+            "Vietnamese",
+            "Seafood"
+        ],
+        "ingredients": [
+            "Shaoxing wine",
+            "baby bok choy, stems and leaves separated",
+            "carrot, peeled and sliced",
+            "chicken broth",
+            "chicken thigh, thinly sliced",
+            "cornstarch",
+            "dark soy sauce",
+            "fresh thin egg noodles",
+            "garlic cloves, minced",
+            "granulated sugar",
+            "light soy sauce",
+            "oyster sauce",
+            "sesame oil",
+            "shallots, minced",
+            "shiitake mushrooms, stems removed and sliced",
+            "shrimp, peeled and deveined",
+            "squid, cleaned and sliced",
+            "stalks green onion",
+            "vegetable oil",
+            "vegetable or canola oil",
+            "water",
+            "white pepper",
+            "yellow onion"
+        ]
+    },
+    "Mi xio gion.html": {
+        "title": "Mi xio gion",
+        "category": [
+            "Uncategorized"
+        ],
+        "ingredients": [
+            "Shaoxing wine",
+            "baby bok choy, stems and leaves separated",
+            "carrot, peeled and sliced",
+            "chicken broth",
+            "chicken thigh, thinly sliced",
+            "cornstarch",
+            "dark soy sauce",
+            "fresh thin egg noodles",
+            "garlic cloves, minced",
+            "granulated sugar",
+            "light soy sauce",
+            "oyster sauce",
+            "sesame oil",
+            "shallots, minced",
+            "shiitake mushrooms, stems removed and sliced",
+            "shrimp, peeled and deveined",
+            "squid, cleaned and sliced",
+            "stalks green onion",
+            "vegetable oil",
+            "vegetable or canola oil",
+            "water",
+            "white pepper",
+            "yellow onion"
+        ]
+    },
     "Mizu_Shingen_Mochi.html": {
         "title": "Mizu Shingen Mochi",
         "category": [
             "Japanese",
-            "Dessert",
-            "Vegetarian"
+            "Dessert"
         ],
         "ingredients": [
             "agar agar powder",
@@ -1722,8 +2206,7 @@
         "category": [
             "Chinese",
             "Vietnamese",
-            "Dessert",
-            "Vegetarian"
+            "Dessert"
         ],
         "ingredients": [
             "Cornstarch -",
@@ -1760,8 +2243,7 @@
         "title": "Naan",
         "category": [
             "Indian",
-            "Bread",
-            "Vegetarian"
+            "Bread"
         ],
         "ingredients": [
             "Salt",
@@ -1805,6 +2287,27 @@
             "sugar",
             "sugar",
             "tenkasu/agedama"
+        ]
+    },
+    "Pelmeni.html": {
+        "title": "Pelmeni",
+        "category": [
+            "Meal",
+            "Russian",
+            "Pork",
+            "Mince"
+        ],
+        "ingredients": [
+            "eggs",
+            "flour",
+            "ground meat",
+            "large onion",
+            "lukewarm water",
+            "pepper",
+            "salt",
+            "salt",
+            "sour cream",
+            "unsalted butter"
         ]
     },
     "Pide.html": {
@@ -1866,6 +2369,23 @@
             "unsalted butter"
         ]
     },
+    "Pizza mortadella, burrata and pistachios.html": {
+        "title": "Pizza mortadella, burrata and pistachios",
+        "category": [
+            "Meal",
+            "Italian",
+            "Pork"
+        ],
+        "ingredients": [
+            "a of salt",
+            "burratina",
+            "fresh mozzarella, slivered",
+            "pistachios, crushed",
+            "pizza dough",
+            "thin slices of mortadella",
+            "yellow date tomatoes, halved"
+        ]
+    },
     "Rendang_inspired_puffs.html": {
         "title": "Rendang Inspired Puffs",
         "category": [
@@ -1897,8 +2417,7 @@
         "title": "Rhubarb Meringue Pie",
         "category": [
             "German",
-            "Dessert",
-            "Vegetarian"
+            "Dessert"
         ],
         "ingredients": [
             "all-purpose flour",
@@ -1935,6 +2454,42 @@
             "salt",
             "water",
             "water"
+        ]
+    },
+    "Roti Cenai.html": {
+        "title": "Roti cenai",
+        "category": [
+            "Bread",
+            "Malaysian",
+            "Vegetarian"
+        ],
+        "ingredients": [
+            "Cooking:",
+            "Dairy-Free Dough Option:",
+            "Dough:",
+            "Ghee or neutral oil + butter",
+            "Salt",
+            "Shaping:",
+            "Super Coconut-y Curry Dip:",
+            "all-purpose flour",
+            "all-purpose flour",
+            "fine sea salt or table salt",
+            "fine sea salt or table salt",
+            "five spice or garam masala",
+            "full-fat coconut milk",
+            "lukewarm water",
+            "melted butter or ghee",
+            "melted margarine or vegan butter",
+            "neutral oil",
+            "oat, almond, soy, or lactose-free milk",
+            "sugar",
+            "sugar",
+            "sugar",
+            "sweetened condensed milk",
+            "turmeric",
+            "water",
+            "\u2013 Thai red curry paste",
+            "\u2013 fish sauce"
         ]
     },
     "Roti.html": {
@@ -1987,8 +2542,7 @@
         "category": [
             "Israeli",
             "Dessert",
-            "Bread",
-            "Vegetarian"
+            "Bread"
         ],
         "ingredients": [
             "active dry yeast",
@@ -2015,8 +2569,7 @@
         "title": "Sachertorte",
         "category": [
             "Austrian",
-            "Dessert",
-            "Vegetarian"
+            "Dessert"
         ],
         "ingredients": [
             "apricot jam",
@@ -2036,7 +2589,7 @@
     "Sakoo_Yat_Sai.html": {
         "title": "Sakoo Yat Sai",
         "category": [
-            "Loatian",
+            "Laotian",
             "Mince",
             "Pork",
             "Meal"
@@ -2121,8 +2674,7 @@
         "title": "Snow Skin Mooncake",
         "category": [
             "Chinese",
-            "Dessert",
-            "Vegetarian"
+            "Dessert"
         ],
         "ingredients": [
             "Matcha powder",
@@ -2200,6 +2752,31 @@
             "toasted breadcrumbs"
         ]
     },
+    "Spicy pork belly pizza.html": {
+        "title": "Spicy pork belly pizza",
+        "category": [
+            "Meal",
+            "Italian",
+            "Korean",
+            "Pork"
+        ],
+        "ingredients": [
+            "fresh mozzarella",
+            "garlic (1 small clove), minced",
+            "gochugaru",
+            "gochujang",
+            "heavy cream",
+            "low-moisture mozzarella",
+            "olive oil",
+            "pizza dough",
+            "scallions, thinly sliced",
+            "sliced pork belly",
+            "soy sauce",
+            "sugar",
+            "tomato sauce",
+            "vodka"
+        ]
+    },
     "Spicy_Peanut_Udon.html": {
         "title": "Spicy Peanut Udon",
         "category": [
@@ -2225,6 +2802,57 @@
             "vegetable oil",
             "white vinegar",
             "whole star anise"
+        ]
+    },
+    "Spinach Alfredo Pasta.html": {
+        "title": "Spinach alfredo pasta",
+        "category": [
+            "Meal",
+            "Italian",
+            "American",
+            "Vegetarian"
+        ],
+        "ingredients": [
+            "Freshly cracked black pepper",
+            "Olive oil",
+            "butter",
+            "cream spinach",
+            "garlic, minced",
+            "grated Parmesan",
+            "heavy cream",
+            "pasta",
+            "salt",
+            "shallots"
+        ]
+    },
+    "Spinach Alfredo Pizza.html": {
+        "title": "Spinach alfredo pizza",
+        "category": [
+            "Meal",
+            "Italian",
+            "American",
+            "Vegetarian"
+        ],
+        "ingredients": [
+            "Extra Parmesan and red pepper flakes for sprinkling",
+            "Extra olive oil for greasing the pizza stone or pan",
+            "Kosher salt and black pepper,",
+            "Mozzarella cheese, freshly grated",
+            "active dry yeast",
+            "all-purpose flour",
+            "butter",
+            "fresh baby spinach",
+            "freshly grated Parmesan cheese",
+            "garlic clove, minced",
+            "garlic clove, minced",
+            "heavy cream",
+            "olive oil",
+            "olive oil",
+            "salt",
+            "sugar",
+            "very warm (not hot) water",
+            "whole milk",
+            "\u2013 flour"
         ]
     },
     "Taiwanese_Pepper_Meat_Buns.html": {
@@ -2273,8 +2901,7 @@
         "title": "Tangzhong Milk Bread",
         "category": [
             "Japanese",
-            "Bread",
-            "Vegetarian"
+            "Bread"
         ],
         "ingredients": [
             "active dry yeast",
@@ -2323,6 +2950,40 @@
             "unsweetened soy milk"
         ]
     },
+    "Thoum and Zhoug Chicken Wrap.html": {
+        "title": "Thoum and zhoug chicken wrap",
+        "category": [
+            "Meal",
+            "Lebanese",
+            "Chicken"
+        ],
+        "ingredients": [
+            "Small MSG",
+            "Zest of 1 lime",
+            "baharat",
+            "coriander",
+            "curry powder",
+            "curry powder",
+            "deboned chicken leg, skin on",
+            "garlic clove",
+            "granulated or freeze-dried garlic",
+            "green chilies",
+            "ground cardamom",
+            "ground cumin",
+            "labneh or dense yogurt",
+            "lime juice",
+            "mayonnaise",
+            "neutral oil",
+            "neutral oil",
+            "olive oil",
+            "salt",
+            "salt",
+            "small garlic clove, grated",
+            "smoked paprika",
+            "vinegar",
+            "\u2013 red pepper flakes"
+        ]
+    },
     "Toffee_Chocolate_Chip_Cookies.html": {
         "title": "Toffee Chocolate Chip Cookies",
         "category": [
@@ -2347,6 +3008,27 @@
             "unsalted butter",
             "vanilla extract",
             "water, as needed"
+        ]
+    },
+    "Tteokbokki.html": {
+        "title": "Tteokbokki",
+        "category": [
+            "Meal",
+            "Korean"
+        ],
+        "ingredients": [
+            "Korean fish cakes",
+            "Korean rice cakes",
+            "Korean soup stock",
+            "gochugaru",
+            "gochujang",
+            "minced garlic",
+            "onion",
+            "sesame oil",
+            "soy sauce",
+            "stalk green onion",
+            "sugar",
+            "toasted sesame seeds"
         ]
     },
     "Vegan_Tonkotsu_Ramen.html": {
