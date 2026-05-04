@@ -906,7 +906,7 @@ document.addEventListener("DOMContentLoaded", async () => {
 
         main.innerHTML = keys.map(file => {
             const { title, category = [] } = filtered[file];
-            const imgSrc = `./images/recipe/${file.replace('.html', '.jpg')}`;
+            const imgSrc = `./images/${file.replace('.html', '.jpg')}`;
             const type = typeValues.find(t => category.includes(t));
             const cuisine = cuisineValues.find(c => category.includes(c));
             const protein = proteinValues.find(p => category.includes(p));
