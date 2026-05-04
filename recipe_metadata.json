@@ -377,7 +377,7 @@
             "Seafood"
         ],
         "ingredients": [
-            "Vietnamese perilla (t\u00eda t\u00f4)",
+            "Vietnamese perilla (tía tô)",
             "Vietnamese prepared dipping sauce",
             "all-purpose flour",
             "bean sprouts",
@@ -476,7 +476,7 @@
             "fresh sage leaves",
             "garlic",
             "grated parmesan",
-            "juice of \u00bd lemon",
+            "juice of ½ lemon",
             "salt",
             "salt and pepper",
             "unsalted butter",
@@ -574,7 +574,7 @@
             "whole egg",
             "whole milk",
             "whole milk",
-            "whole milk @ 30\u00b0C"
+            "whole milk @ 30°C"
         ]
     },
     "Burger_sauce.html": {
@@ -838,7 +838,7 @@
             "roasted pine nuts",
             "sea salt",
             "shaved Parmesan cheese",
-            "\u2013 garlic (2\u20133 cloves), minced"
+            "– garlic (2–3 cloves), minced"
         ]
     },
     "Chicago_Deep_Dish_Pizza.html": {
@@ -997,7 +997,7 @@
             "olive oil",
             "pale ale",
             "smoked paprika",
-            "tomato pur\u00e9e"
+            "tomato purée"
         ]
     },
     "Cinnamon_Rolls.html": {
@@ -1388,7 +1388,7 @@
             "Vegetarian"
         ],
         "ingredients": [
-            "Gruy\u00e8re",
+            "Gruyère",
             "Puff pastry",
             "egg",
             "onions",
@@ -1505,7 +1505,7 @@
             "water",
             "water",
             "white pepper",
-            "\u2013 sambal oelek or minced Thai chilies"
+            "– sambal oelek or minced Thai chilies"
         ]
     },
     "Gyoza.html": {
@@ -1570,7 +1570,7 @@
             "cold water",
             "fresh lemon juice",
             "ground cumin",
-            "ground paprika, sumac, or Za\u2019atar for serving",
+            "ground paprika, sumac, or Za’atar for serving",
             "olive oil, plus more for serving",
             "small garlic clove, minced",
             "well-stirred tahini"
@@ -2048,8 +2048,8 @@
             "star anise",
             "sugar",
             "white pepper",
-            "\u2013 dried chilis",
-            "\u2013 homemade mala oil"
+            "– dried chilis",
+            "– homemade mala oil"
         ]
     },
     "Malai Kofta.html": {
@@ -2086,14 +2086,14 @@
             "raisins",
             "red chili powder",
             "strands mace",
-            "tomato pur\u00e9e",
+            "tomato purée",
             "turmeric powder",
             "water",
-            "\u2013 cashew paste",
-            "\u2013 cashews",
-            "\u2013 grated paneer",
-            "\u2013 light or whipping cream",
-            "\u2013 sugar"
+            "– cashew paste",
+            "– cashews",
+            "– grated paneer",
+            "– light or whipping cream",
+            "– sugar"
         ]
     },
     "Meat_and_Potato_Pie.html": {
@@ -2379,7 +2379,7 @@
             "small kaffir lime leaves",
             "stalk lemongrass",
             "turmeric powder",
-            "\u2013 chili paste or sambal oelek"
+            "– chili paste or sambal oelek"
         ]
     },
     "Rhubarb_Meringue_Pie.html": {
@@ -2457,8 +2457,8 @@
             "sweetened condensed milk",
             "turmeric",
             "water",
-            "\u2013 Thai red curry paste",
-            "\u2013 fish sauce"
+            "– Thai red curry paste",
+            "– fish sauce"
         ]
     },
     "Roti.html": {
@@ -2821,7 +2821,28 @@
             "sugar",
             "very warm (not hot) water",
             "whole milk",
-            "\u2013 flour"
+            "– flour"
+        ]
+    },
+    "Spinach_and_cheese_pizza.html": {
+        "title": "Spinach and cheese pizza",
+        "category": [
+            "Meal",
+            "Veggy"
+        ],
+        "ingredients": [
+            "Baby spinach",
+            "Baking powder",
+            "Chili flakes",
+            "Feta cheese",
+            "Flour",
+            "Garlic powder",
+            "Lemon juice",
+            "Mascarpone",
+            "Olive oil",
+            "Pepper",
+            "Salt",
+            "Yoghurt"
         ]
     },
     "Taiwanese_Pepper_Meat_Buns.html": {
@@ -2950,7 +2971,7 @@
             "small garlic clove, grated",
             "smoked paprika",
             "vinegar",
-            "\u2013 red pepper flakes"
+            "– red pepper flakes"
         ]
     },
     "Toffee_Chocolate_Chip_Cookies.html": {

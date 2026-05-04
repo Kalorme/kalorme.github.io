@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <title>Spinach and cheese pizza</title>
+    <style>
+
+        *, *::before, *::after { box-sizing: border-box; text-size-adjust: none; }
+
+        :root {
+            --bg: #ffffff;
+            --surface: #f5f5f5;
+            --nav-bg: #ffffff;
+            --nav-text: #444444;
+            --accent: #E05A2B;
+            --text: #111111;
+            --text-2: #555555;
+            --text-3: rgba(0,0,0,0.35);
+            --text-4: rgba(0,0,0,0.18);
+            --border: rgba(0,0,0,0.1);
+            --shadow: none;
+            --radius: 10px;
+        }
+
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --bg: #111111;
+                --surface: #1a1a1a;
+                --nav-bg: #0a0a0a;
+                --nav-text: rgba(255,255,255,0.6);
+                --text: rgba(255,255,255,0.92);
+                --text-2: rgba(255,255,255,0.5);
+                --text-3: rgba(255,255,255,0.28);
+                --text-4: rgba(255,255,255,0.14);
+                --border: rgba(255,255,255,0.09);
+                --shadow: none;
+            }
+        }
+
+        html, body {
+            margin: 0;
+            padding: 0;
+            background: var(--bg);
+            color: var(--text);
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            line-height: 1.6;
+            font-size: 17px;
+        }
+
+        a { color: var(--accent); text-decoration: none; font-weight: 600; }
+        h1, h3 { margin: 0; padding: 0; }
+        strong { color: var(--text); font-weight: 700; }
+        sup, sub { position: relative; font-size: 0.6em; line-height: 1; }
+        sup { top: 0.1em; } sub { bottom: 0.3em; }
+        ol, ul { list-style: none; margin: 0; padding: 0; }
+
+        /* NAV BAR */
+        nav {
+            background: var(--nav-bg);
+            height: 50px;
+            display: flex;
+            align-items: center;
+            padding: 0 24px;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            border-bottom: 1px solid var(--border);
+        }
+        nav a {
+            color: var(--nav-text);
+            font-size: 0.85rem;
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            gap: 7px;
+            transition: color 0.15s;
+        }
+        nav a:hover { color: var(--text); }
+        nav .accent { color: var(--accent); }
+
+        /* RECIPE IMAGE — banner on mobile, side panel on desktop */
+        #title > span:first-child {
+            display: block !important;
+            width: 100%;
+            height: 260px;
+            padding-top: 0 !important;
+            background-size: contain;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-color: var(--surface);
+        }
+
+        /* MAIN */
+        main { display: block; padding-bottom: 60px; }
+
+        /* TITLE SECTION */
+        #title { border-bottom: 1px solid var(--border); overflow: hidden; }
+        #title .title {
+            padding: 28px 32px 28px;
+            max-width: 1160px;
+            margin: 0 auto;
+        }
+        #title h1 {
+            font-size: clamp(1.8rem, 3.5vw, 2.8rem);
+            font-weight: 800;
+            line-height: 1.1;
+            letter-spacing: -0.8px;
+            margin-bottom: 20px;
+        }
+
+        /* Desktop: image as side panel, fixed aspect-ratio so full image always shows */
+        @media (min-width: 780px) {
+            #title {
+                display: flex;
+                flex-direction: row-reverse;
+                align-items: flex-start;
+            }
+            #title > span:first-child {
+                flex: 0 0 40%;
+                aspect-ratio: 4 / 3;
+                height: auto;
+                width: auto;
+                background-size: contain;
+            }
+            #title .title {
+                flex: 1;
+                max-width: none;
+                margin: 0;
+                padding: 32px 40px;
+            }
+        }
+
+        /* INFO BAR */
+        #info {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            margin: 0 0 18px;
+            padding: 0;
+            overflow: visible;
+            font-size: 0.82rem;
+            font-weight: 600;
+            margin-left: 0;
+            gap: 4px 0;
+        }
+        #info .group {
+            display: inline-flex;
+            align-items: center;
+            position: static;
+            white-space: nowrap;
+            line-height: 1;
+            padding: 4px 0;
+        }
+        #info .group + .group::before {
+            content: '';
+            display: inline-block;
+            width: 1px;
+            height: 16px;
+            background: var(--border);
+            margin: 0 14px;
+            vertical-align: middle;
+        }
+        #info .info {
+            display: inline-flex;
+            align-items: center;
+            height: auto;
+            line-height: 1;
+            padding: 5px 0;
+            color: var(--text-2);
+            text-decoration: none;
+            position: relative;
+        }
+        #info .info.labeled {
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 3px;
+            padding: 4px 0;
+        }
+        #info .info.labeled + .info.labeled { margin-left: 20px; }
+        #info .info.labeled span { color: var(--text); font-size: 0.9rem; line-height: 1; display: block; }
+        #info .info.labeled label { font-size: 0.6rem; text-transform: uppercase; letter-spacing: 0.9px; color: var(--text-3); display: block; font-weight: 700; }
+        #info .info.icon { padding-left: 26px; }
+        #info .info.icon:after {
+            opacity: 0.5;
+            content: ' ';
+            position: absolute;
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 18px;
+            height: 18px;
+            background-size: 16px 16px;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+        @media (prefers-color-scheme: dark) {
+            #info .info.icon:after { filter: invert(100%); opacity: 0.65; }
+        }
+
+        /* DESCRIPTION */
+        .description { font-size: 0.95rem; color: var(--text-2); line-height: 1.75; }
+        .description p { margin: 0; }
+
+        /* RECIPE BODY */
+        #recipe-body {
+            display: grid;
+            grid-template-columns: 1fr;
+            padding: 0 18px;
+            gap: 0;
+            align-items: start;
+        }
+
+        /* INGREDIENTS */
+        #ingredients {
+            padding-top: 28px;
+            margin-bottom: 28px;
+        }
+        #ingredients::before {
+            content: 'Ingredients';
+            display: block;
+            font-size: 0.8rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.8px;
+            color: var(--accent);
+            margin-bottom: 12px;
+        }
+        #ingredients > span:first-child { display: none !important; }
+        #ingredients > div {
+            background: transparent;
+            border-radius: 0;
+            padding: 0;
+            box-shadow: none;
+            max-width: none;
+            margin: 0;
+            position: static;
+        }
+        #ingredients > div::before { display: none !important; }
+        .ingredients ul { list-style: none; margin: 0; padding: 0; }
+        .ingredients li {
+            font-size: 0.95rem;
+            color: var(--text-2);
+            line-height: 1.45;
+            margin: 0;
+            padding: 12px 0;
+            border-bottom: 1px solid var(--border);
+        }
+        .ingredients li:last-child { border-bottom: none; }
+        .ingredients li strong { color: var(--text); font-weight: 700; }
+        .ingredients li i {
+            display: block;
+            font-size: 0.8rem;
+            color: var(--text-2);
+            font-style: italic;
+            margin-top: 3px;
+            opacity: 0.65;
+        }
+        .ingredients h3 {
+            font-size: 0.78rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.8px;
+            color: var(--text-3);
+            padding: 18px 0 4px;
+            margin: 0;
+        }
+
+        /* MULTIPLIER */
+        .multiplier {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding-bottom: 14px;
+            margin-bottom: 14px;
+            border-bottom: 1px solid var(--border);
+        }
+        .mult-label {
+            font-size: 0.62rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: var(--text-3);
+        }
+        .mult-buttons { display: flex; gap: 4px; }
+        .mult-btn {
+            background: var(--border);
+            border: none;
+            color: var(--text-2);
+            border-radius: 6px;
+            padding: 3px 8px;
+            font-size: 0.7rem;
+            font-weight: 700;
+            cursor: pointer;
+            transition: background 0.15s, color 0.15s;
+        }
+        .mult-btn:hover { background: rgba(255,107,53,0.15); color: var(--accent); }
+        .mult-btn.active { background: var(--accent); color: white; }
+
+        /* INSTRUCTIONS */
+        #instructions { padding-top: 28px; }
+        #instructions::before {
+            content: 'Instructions';
+            display: block;
+            font-size: 0.8rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.8px;
+            color: var(--accent);
+            margin-bottom: 16px;
+        }
+        #instructions > div {
+            max-width: none;
+            margin: 0;
+            padding: 0;
+            position: static;
+        }
+        #instructions > div::before { display: none !important; }
+        .instructions ol { list-style: none; counter-reset: step; margin: 0; padding: 0; }
+        .instructions ol li {
+            counter-increment: step;
+            display: grid;
+            grid-template-columns: 32px 1fr;
+            column-gap: 16px;
+            align-items: start;
+            padding: 18px 0;
+            font-size: 1rem;
+            color: var(--text-2);
+            line-height: 1.72;
+            border-bottom: 1px solid var(--border);
+        }
+        .step-img {
+            grid-column: 2;
+            width: 100%;
+            height: 220px;
+            object-fit: cover;
+            border-radius: 10px;
+            margin-top: 8px;
+            display: block;
+        }
+        .instructions ol li:last-child { border-bottom: none; }
+        .instructions ol li::before {
+            content: counter(step, decimal-leading-zero);
+            display: block;
+            font-size: 0.7rem;
+            font-weight: 700;
+            letter-spacing: 0.5px;
+            color: var(--accent);
+            margin-top: 5px;
+            line-height: 1;
+        }
+        .instructions h3 {
+            font-size: 0.82rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.8px;
+            color: var(--text-3);
+            padding: 28px 0 4px;
+            margin: 0;
+            border-top: none;
+            margin-top: 0;
+        }
+        .instructions > div > h3:first-child { border-top: none; margin-top: 0; padding-top: 0; }
+        .instructions > div > *:first-child { padding-top: 0; }
+        .instructions .notes { font-style: italic; color: var(--text-3); }
+
+
+        /* DESKTOP — sticky sidebar, title + instructions scroll freely */
+        @media (min-width: 780px) {
+            #recipe-body {
+                grid-template-columns: 300px 1fr;
+                align-items: start;
+                gap: 0;
+                padding: 0;
+                max-width: none;
+                margin: 0;
+            }
+            #ingredients {
+                position: sticky;
+                top: 50px;
+                height: calc(100vh - 50px);
+                overflow-y: auto;
+                border-right: 1px solid var(--border);
+                padding: 28px 24px 60px;
+                margin-bottom: 0;
+                scrollbar-width: thin;
+                scrollbar-color: var(--border) transparent;
+            }
+            #ingredients::before { margin-bottom: 14px; }
+            #instructions {
+                padding: 28px 48px 100px;
+            }
+            #instructions::before { margin-bottom: 20px; }
+        }
+
+        /* MOBILE */
+        @media (max-width: 779px) {
+            #ingredients { padding-top: 0; }
+            #ingredients::before { padding-top: 28px; }
+            #instructions { padding-top: 0; }
+            #instructions::before { padding-top: 24px; }
+        }
+        @media (max-width: 600px) {
+            #title .title { padding: 20px 18px 20px; }
+        }
+
+        /* THEME TOGGLE BUTTON */
+        #theme-toggle {
+            margin-left: auto;
+            background: none;
+            border: none;
+            cursor: pointer;
+            font-size: 1.1rem;
+            padding: 5px 7px;
+            border-radius: 7px;
+            line-height: 1;
+            transition: background 0.15s;
+        }
+        #theme-toggle:hover { background: var(--border); }
+
+        /* DATA-THEME OVERRIDES (manual toggle beats system preference) */
+        html[data-theme="light"] {
+            --bg: #ffffff; --surface: #f5f5f5; --nav-bg: #ffffff;
+            --nav-text: #444444; --text: #111111; --text-2: #555555;
+            --text-3: rgba(0,0,0,0.35); --text-4: rgba(0,0,0,0.18);
+            --border: rgba(0,0,0,0.1); --shadow: none;
+        }
+        html[data-theme="dark"] {
+            --bg: #111111; --surface: #1a1a1a; --nav-bg: #0a0a0a;
+            --nav-text: rgba(255,255,255,0.6); --text: rgba(255,255,255,0.92);
+            --text-2: rgba(255,255,255,0.5); --text-3: rgba(255,255,255,0.28);
+            --text-4: rgba(255,255,255,0.14); --border: rgba(255,255,255,0.09);
+            --shadow: none;
+        }
+
+        /* Icon filter overrides for when manual theme contradicts system preference.
+           Base icons are black PNGs. Dark mode needs invert() to make them white.
+           These rules ensure the filter matches the actual background, not just the OS setting. */
+        html[data-theme="light"] #info .info.icon:after {
+            filter: none !important;
+            opacity: 0.55;
+        }
+        html[data-theme="dark"] #info .info.icon:after {
+            filter: invert(100%) !important;
+            opacity: 0.65;
+        }
+    
+    </style>
+
+    <script type="application/ld+json">
+    {
+  "@type": "Recipe",
+  "name": "Spinach and cheese pizza",
+  "description": "Recipe is enough for 4 small pizzas. Inspired by Burek :)",
+  "recipeYield": "4",
+  "prepTime": "30",
+  "cookTime": "30",
+  "totalTime": "60",
+  "mainEntityOfPage": "Homemade",
+  "recipeIngredient": [
+    "250 g Flour",
+    "7 g Baking powder (or just buy self rising flour)",
+    "290 g Yoghurt",
+    "1 packet Baby spinach (aldi)",
+    "1  packet  Feta cheese (aldi)",
+    "0.5 packet Mascarpone (aldi)",
+    "Pepper (to taste)",
+    "Salt (to taste)",
+    "Garlic powder (to taste)",
+    "Chili flakes (optional)",
+    "Olive oil (optional)",
+    "Lemon juice (optional)"
+  ],
+  "recipeInstructions": [
+    "Add flour and baking powder, mix",
+    "Add yoghurt to flour, and mix until shaggy dough, add more flour if it sticks too much to your hands",
+    "Then flour hands and divide dough ball into pizzas, use hands to stretch dough thin and lay on baking sheet",
+    "Cut spinach and feta as fine as possible",
+    "Add into bowl and add mascarpone, pepper, salt and garlic powder, mix until homogenous",
+    "Spread topping on pizza",
+    "Bake at 200C for 30 minutes or 220C for 20 minutes (optional: halfway through baking you can take it out and brush olive oil on the crust)",
+    "Top with chili flakes and drizzle with a little bit of lemon juice"
+  ]
+}
+    </script>
+</head>
+<body>
+
+    <nav>
+        <a href="index.html">
+            <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+                <path d="M19 12H5M12 5l-7 7 7 7"/>
+            </svg>
+            <span>🍳 <span class="accent">Moutstraat</span></span>
+        </a>
+        <button id="theme-toggle" title="Toggle theme"></button>
+    </nav>
+
+    <main>
+
+        <div id="title"><span></span><div class="title"><h1>Spinach and cheese pizza</h1><p id="info"><span class="group"><a class="info icon source" href="Homemade">Homemade</a></span><span class="group"><span class="info icon servings">4</span></span><span class="group"><span class="info labeled icon timer"><span>30</span><label>Prep</label></span><span class="info labeled"><span>30</span><label>Cook</label></span><span class="info labeled"><span>60</span><label>Total</label></span></span></p><div class="description"><p>Recipe is enough for 4 small pizzas. Inspired by Burek :)</p></div></div></div>
+
+        <div id="recipe-body">
+            <div id="ingredients"><span></span><div class="ingredients"><h3 itemprop="recipeIngredient">Pizza dough</h3><ul><li itemprop="recipeIngredient"><strong>250</strong> <strong>g</strong> Flour</li><li itemprop="recipeIngredient"><strong>7</strong> <strong>g</strong> Baking powder <i>or just buy self rising flour</i></li><li itemprop="recipeIngredient"><strong>290</strong> <strong>g</strong> Yoghurt</li></ul><h3 itemprop="recipeIngredient">Toppings</h3><ul><li itemprop="recipeIngredient"><strong>1</strong> <strong>packet</strong> Baby spinach <i>aldi</i></li><li itemprop="recipeIngredient"><strong>1</strong> <strong>packet</strong> Feta cheese <i>aldi</i></li><li itemprop="recipeIngredient"><strong>0.5</strong> <strong>packet</strong> Mascarpone <i>aldi</i></li><li itemprop="recipeIngredient">Pepper <i>to taste</i></li><li itemprop="recipeIngredient">Salt <i>to taste</i></li><li itemprop="recipeIngredient">Garlic powder <i>to taste</i></li><li itemprop="recipeIngredient">Chili flakes <i>optional</i></li><li itemprop="recipeIngredient">Olive oil <i>optional</i></li><li itemprop="recipeIngredient">Lemon juice <i>optional</i></li></ul></div></div>
+            <div id="instructions"><div class="instructions"><h3>Pizza dough</h3><ol><li>Add flour and baking powder, mix</li><li>Add yoghurt to flour, and mix until shaggy dough, add more flour if it sticks too much to your hands</li><li>Then flour hands and divide dough ball into pizzas, use hands to stretch dough thin and lay on baking sheet</li></ol><h3>Topping</h3><ol><li>Cut spinach and feta as fine as possible</li><li>Add into bowl and add mascarpone, pepper, salt and garlic powder, mix until homogenous</li></ol><h3>Baking</h3><ol><li>Spread topping on pizza</li><li>Bake at 200C for 30 minutes or 220C for 20 minutes (optional: halfway through baking you can take it out and brush olive oil on the crust)</li><li>Top with chili flakes and drizzle with a little bit of lemon juice</li></ol></div></div>
+        </div>
+
+    </main>
+
+    <style type="text/css">
+        .icon.source:after { background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAA8CAYAAAA6/NlyAAAEs2lUWHRYTUw6Y29tLmFkb2JlLnhtcAAAAAAAPD94cGFja2V0IGJlZ2luPSLvu78iIGlkPSJXNU0wTXBDZWhpSHpyZVN6TlRjemtjOWQiPz4KPHg6eG1wbWV0YSB4bWxuczp4PSJhZG9iZTpuczptZXRhLyIgeDp4bXB0az0iWE1QIENvcmUgNS41LjAiPgogPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4KICA8cmRmOkRlc2NyaXB0aW9uIHJkZjphYm91dD0iIgogICAgeG1sbnM6ZXhpZj0iaHR0cDovL25zLmFkb2JlLmNvbS9leGlmLzEuMC8iCiAgICB4bWxuczp0aWZmPSJodHRwOi8vbnMuYWRvYmUuY29tL3RpZmYvMS4wLyIKICAgIHhtbG5zOnBob3Rvc2hvcD0iaHR0cDovL25zLmFkb2JlLmNvbS9waG90b3Nob3AvMS4wLyIKICAgIHhtbG5zOnhtcD0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wLyIKICAgIHhtbG5zOnhtcE1NPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvbW0vIgogICAgeG1sbnM6c3RFdnQ9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZUV2ZW50IyIKICAgZXhpZjpQaXhlbFhEaW1lbnNpb249IjYwIgogICBleGlmOlBpeGVsWURpbWVuc2lvbj0iNjAiCiAgIGV4aWY6Q29sb3JTcGFjZT0iMSIKICAgdGlmZjpJbWFnZVdpZHRoPSI2MCIKICAgdGlmZjpJbWFnZUxlbmd0aD0iNjAiCiAgIHRpZmY6UmVzb2x1dGlvblVuaXQ9IjIiCiAgIHRpZmY6WFJlc29sdXRpb249IjcyLzEiCiAgIHRpZmY6WVJlc29sdXRpb249IjcyLzEiCiAgIHBob3Rvc2hvcDpDb2xvck1vZGU9IjMiCiAgIHBob3Rvc2hvcDpJQ0NQcm9maWxlPSJzUkdCIElFQzYxOTY2LTIuMSIKICAgeG1wOk1vZGlmeURhdGU9IjIwMjItMDQtMjlUMTQ6MzE6NDIrMDI6MDAiCiAgIHhtcDpNZXRhZGF0YURhdGU9IjIwMjItMDQtMjlUMTQ6MzE6NDIrMDI6MDAiPgogICA8eG1wTU06SGlzdG9yeT4KICAgIDxyZGY6U2VxPgogICAgIDxyZGY6bGkKICAgICAgc3RFdnQ6YWN0aW9uPSJwcm9kdWNlZCIKICAgICAgc3RFdnQ6c29mdHdhcmVBZ2VudD0iQWZmaW5pdHkgRGVzaWduZXIgMS4xMC40IgogICAgICBzdEV2dDp3aGVuPSIyMDIyLTA0LTI5VDE0OjMxOjQyKzAyOjAwIi8+CiAgICA8L3JkZjpTZXE+CiAgIDwveG1wTU06SGlzdG9yeT4KICA8L3JkZjpEZXNjcmlwdGlvbj4KIDwvcmRmOlJERj4KPC94OnhtcG1ldGE+Cjw/eHBhY2tldCBlbmQ9InIiPz750iYKAAABgWlDQ1BzUkdCIElFQzYxOTY2LTIuMQAAKJF1kd8rg1EYxz/2I2IacSG5WBpXm4YSKWXSqKU1U4ab7bUfapu395203Cq3ihI3fl3wF3CrXCtFpORSrokb1ut5bTXJntNzns/5nvM8nfMcsEQySla3+SCby2vhgN81G51z1T5jox07zQzHFF0dDYWCVLWPO2rMeOM1a1U/9681LCZ0BWrqhEcUVcsLTwgHV/OqydvCrUo6tih8KuzR5ILCt6YeL/GLyakSf5msRcJjYGkSdqV+cfwXK2ktKywvx53NrCjl+5gvcSRyM9MSO8U70AkTwI+LScYZY4BehmQewEsfPbKiSr7vJ3+KZclVZFYpoLFEijR5PKKuSPWExKToCRkZCmb///ZVT/b3lao7/GB/Moy3LqjdguKmYXweGkbxCKyPcJGr5C8fwOC76JsVzb0PznU4u6xo8R0434C2BzWmxX4kq7glmYTXE2iMQss11M+Xelbe5/geImvyVVewuwfdct658A1r12foZo16awAAAAlwSFlzAAALEwAACxMBAJqcGAAAAgBJREFUaIHt2jtrVEEYh/Gfxkvwhk1EC8HCzkJBxaCFIOIHEMVCUGxMZSFaCDYi6Eew0o9gI1h5w8pb4QcIaBMQNBYaJRgxWmyCm+NudN8ZIjm8DyzLnOX9n3l2dmYPzJAkSZIkyf9iRYWMzRjFTmzEUIXMbn5gCuN4jk8lYSXCQ7iAcxgu6cQATOM2bmE2ElAyGjdxBqsKMgZlNQ5gBE8iASuDNz6I4z2ufw3mDcop7IsURoVP9Lh2FXtxL5g5KCcjRVHh3T2uvcRPvApmDsqeSFFUeCRYV5NQH6LCa4N1NQn9M0SFly0p3HZSuO2kcNtJ4baTwm0nhdtOCredFG47Kdx2UriA9XPvGypmLsa3SFHNbZIbeICzFTMX412kqKbwrrnXUhHa4Viuc/gF7kQKa+/8fcFHnS2XGsxih4UD8xpj+B4JrCU8hSt4pJ4sbMfDrvYMLursE4eoJXzdwo7V4nCj/VRwsZqn1hx+XCmnydZG+21pYFS4+bOtfa5jnplGe0tpYFT4c6N9rLQjfRhvtI8qlI6OzBFs62qP6qzOE4JPQH2YwGm/t2fXYD+e+fNL/yeip3jO41Kfz2qu0vTu4zQuCyyUUeFNuK/CnCpgEocGLSqZw2N4H6yvQWiwSlbXD7ir83Q1jHU6c63G6b6/MYlreLME90qSJEmSJInxC7BoQlQyr544AAAAAElFTkSuQmCC'); }
+        .icon.servings:after { background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAA8CAYAAAA6/NlyAAAEs2lUWHRYTUw6Y29tLmFkb2JlLnhtcAAAAAAAPD94cGFja2V0IGJlZ2luPSLvu78iIGlkPSJXNU0wTXBDZWhpSHpyZVN6TlRjemtjOWQiPz4KPHg6eG1wbWV0YSB4bWxuczp4PSJhZG9iZTpuczptZXRhLyIgeDp4bXB0az0iWE1QIENvcmUgNS41LjAiPgogPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4KICA8cmRmOkRlc2NyaXB0aW9uIHJkZjphYm91dD0iIgogICAgeG1sbnM6ZXhpZj0iaHR0cDovL25zLmFkb2JlLmNvbS9leGlmLzEuMC8iCiAgICB4bWxuczp0aWZmPSJodHRwOi8vbnMuYWRvYmUuY29tL3RpZmYvMS4wLyIKICAgIHhtbG5zOnBob3Rvc2hvcD0iaHR0cDovL25zLmFkb2JlLmNvbS9waG90b3Nob3AvMS4wLyIKICAgIHhtbG5zOnhtcD0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wLyIKICAgIHhtbG5zOnhtcE1NPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvbW0vIgogICAgeG1sbnM6c3RFdnQ9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZUV2ZW50IyIKICAgZXhpZjpQaXhlbFhEaW1lbnNpb249IjYwIgogICBleGlmOlBpeGVsWURpbWVuc2lvbj0iNjAiCiAgIGV4aWY6Q29sb3JTcGFjZT0iMSIKICAgdGlmZjpJbWFnZVdpZHRoPSI2MCIKICAgdGlmZjpJbWFnZUxlbmd0aD0iNjAiCiAgIHRpZmY6UmVzb2x1dGlvblVuaXQ9IjIiCiAgIHRpZmY6WFJlc29sdXRpb249IjcyLzEiCiAgIHRpZmY6WVJlc29sdXRpb249IjcyLzEiCiAgIHBob3Rvc2hvcDpDb2xvck1vZGU9IjMiCiAgIHBob3Rvc2hvcDpJQ0NQcm9maWxlPSJzUkdCIElFQzYxOTY2LTIuMSIKICAgeG1wOk1vZGlmeURhdGU9IjIwMjItMDQt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'); }
+        .icon.timer:after { background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAA8CAYAAAA6/NlyAAAEs2lUWHRYTUw6Y29tLmFkb2JlLnhtcAAAAAAAPD94cGFja2V0IGJlZ2luPSLvu78iIGlkPSJXNU0wTXBDZWhpSHpyZVN6TlRjemtjOWQiPz4KPHg6eG1wbWV0YSB4bWxuczp4PSJhZG9iZTpuczptZXRhLyIgeDp4bXB0az0iWE1QIENvcmUgNS41LjAiPgogPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4KICA8cmRmOkRlc2NyaXB0aW9uIHJkZjphYm91dD0iIgogICAgeG1sbnM6ZXhpZj0iaHR0cDovL25zLmFkb2JlLmNvbS9leGlmLzEuMC8iCiAgICB4bWxuczp0aWZmPSJodHRwOi8vbnMuYWRvYmUuY29tL3RpZmYvMS4wLyIKICAgIHhtbG5zOnBob3Rvc2hvcD0iaHR0cDovL25zLmFkb2JlLmNvbS9waG90b3Nob3AvMS4wLyIKICAgIHhtbG5zOnhtcD0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wLyIKICAgIHhtbG5zOnhtcE1NPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvbW0vIgogICAgeG1sbnM6c3RFdnQ9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZUV2ZW50IyIKICAgZXhpZjpQaXhlbFhEaW1lbnNpb249IjYwIgogICBleGlmOlBpeGVsWURpbWVuc2lvbj0iNjAiCiAgIGV4aWY6Q29sb3JTcGFjZT0iMSIKICAgdGlmZjpJbWFnZVdpZHRoPSI2MCIKICAgdGlmZjpJbWFnZUxlbmd0aD0iNjAiCiAgIHRpZmY6UmVzb2x1dGlvblVuaXQ9IjIiCiAgIHRpZmY6WFJlc29sdXRpb249IjcyLzEiCiAgIHRpZmY6WVJlc29sdXRpb249IjcyLzEiCiAgIHBob3Rvc2hvcDpDb2xvck1vZGU9IjMiCiAgIHBob3Rvc2hvcDpJQ0NQcm9maWxlPSJzUkdCIElFQzYxOTY2LTIuMSIKICAgeG1wOk1vZGlmeURhdGU9IjIwMjItMDQt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'); }
+        main > div > span:first-child { background-image: url("./images/Spinach_and_cheese_pizza.jpg"); }
+    </style>
+    <script>
+    (function () {
+        const root = document.documentElement;
+        const stored = localStorage.getItem('theme');
+        if (stored) root.setAttribute('data-theme', stored);
+        function isDark() {
+            const t = root.getAttribute('data-theme');
+            return t === 'dark' || (!t && window.matchMedia('(prefers-color-scheme: dark)').matches);
+        }
+        function updateBtn(btn) {
+            btn.textContent = isDark() ? '☀️' : '🌙';
+            btn.title = isDark() ? 'Switch to light mode' : 'Switch to dark mode';
+        }
+        document.addEventListener('DOMContentLoaded', () => {
+            const btn = document.getElementById('theme-toggle');
+            if (!btn) return;
+            updateBtn(btn);
+            btn.addEventListener('click', () => {
+                const next = isDark() ? 'light' : 'dark';
+                root.setAttribute('data-theme', next);
+                localStorage.setItem('theme', next);
+                updateBtn(btn);
+            });
+        });
+    })();
+
+    const STEP_IMAGES = {};
+    document.addEventListener('DOMContentLoaded', () => {
+        const steps = document.querySelectorAll('.instructions ol li');
+        steps.forEach((li, i) => {
+            const src = STEP_IMAGES[i + 1];
+            if (!src) return;
+            const img = document.createElement('img');
+            img.src = src; img.alt = 'Step ' + (i + 1); img.className = 'step-img';
+            li.appendChild(img);
+        });
+        const ingredientItems = document.querySelectorAll('.ingredients li');
+        const origQtys = Array.from(ingredientItems).map(li => {
+            const s = li.querySelector('strong');
+            if (!s) return null;
+            const n = parseFloat(s.textContent.trim());
+            return isNaN(n) ? null : { el: s, val: n };
+        });
+        const multiplierEl = document.createElement('div');
+        multiplierEl.className = 'multiplier';
+        multiplierEl.innerHTML =
+            '<span class="mult-label">Servings</span>' +
+            '<div class="mult-buttons">' +
+            '<button class="mult-btn active" data-mult="1">1×</button>' +
+            '<button class="mult-btn" data-mult="2">2×</button>' +
+            '<button class="mult-btn" data-mult="3">3×</button>' +
+            '</div>';
+        const ingrCard = document.querySelector('#ingredients > div');
+        if (ingrCard) ingrCard.insertBefore(multiplierEl, ingrCard.firstChild);
+        multiplierEl.addEventListener('click', e => {
+            const btn = e.target.closest('.mult-btn');
+            if (!btn) return;
+            multiplierEl.querySelectorAll('.mult-btn').forEach(b => b.classList.remove('active'));
+            btn.classList.add('active');
+            const mult = parseFloat(btn.dataset.mult);
+            origQtys.forEach(q => {
+                if (!q) return;
+                const v = q.val * mult;
+                q.el.textContent = Number.isInteger(v) ? v : +v.toFixed(2);
+            });
+        });
+    });
+    </script>
+
+</body>
+</html>

@@ -1,7 +1,13 @@
 {
   "permissions": {
     "allow": [
-      "Bash(python3 -c \":*)"
+      "Bash(python3 -c \":*)",
+      "Bash(python -c ' *)",
+      "Bash(python \"c:\\\\Users\\\\Koen\\\\AppData\\\\Local\\\\Temp\\\\gen_recipe_creator.py\")",
+      "Bash(python -c \"import ast; ast.parse\\(open\\(r'c:\\\\Users\\\\Koen\\\\Documents\\\\GitHub\\\\kalorme.github.io\\\\recipe_creator.py', encoding='utf-8'\\).read\\(\\)\\); print\\('Syntax OK'\\)\")"
+    ],
+    "additionalDirectories": [
+      "c:\\Users\\Koen\\AppData\\Local\\Temp"
     ]
   }
 }
